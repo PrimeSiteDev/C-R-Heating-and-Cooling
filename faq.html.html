@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FAQ | Prime Site Developer Demo</title>
+  <style>
+    :root{--line:rgba(255,255,255,.12);--text:#eef4ff;--muted:#aabbd2;--accent:#59c7ff;--accent2:#79e5c4;--shadow:0 18px 60px rgba(0,0,0,.35);--max:980px}
+    *{box-sizing:border-box} body{margin:0;font-family:Inter,Arial,sans-serif;color:var(--text);background:linear-gradient(180deg,#06101c,#091423,#07111f)}
+    a{text-decoration:none;color:inherit} .container{width:min(calc(100% - 32px),var(--max));margin:auto}
+    .topbar{position:sticky;top:0;background:rgba(6,14,25,.72);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+    .nav{min-height:78px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:14px;font-weight:800}
+    .brand-mark{width:46px;height:46px;border-radius:16px;display:grid;place-items:center;background:linear-gradient(135deg,var(--accent),#4a86ff 55%,var(--accent2));color:#fff}
+    .nav-links{display:flex;gap:16px;flex-wrap:wrap}.nav-links a{color:var(--muted);font-weight:700;font-size:14px}.nav-links a.active,.nav-links a:hover{color:#fff}
+    .hero{padding:56px 0 22px}.panel,.faq{border:1px solid var(--line);border-radius:24px;background:linear-gradient(180deg,rgba(255,255,255,.05),rgba(255,255,255,.02));box-shadow:var(--shadow)}
+    .panel{padding:28px} h1{font-size:clamp(36px,6vw,60px);margin:0 0 10px;letter-spacing:-1.5px}.lead{color:var(--muted);line-height:1.8;font-size:18px}
+    .stack{display:grid;gap:16px;padding-bottom:55px}.faq{padding:24px}.faq h3{margin:0 0 10px;font-size:24px}.faq p{margin:0;color:var(--muted);line-height:1.8}
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="container nav">
+      <a class="brand" href="index.html"><div class="brand-mark">P</div><div>Prime Site Developer Demo</div></a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="reviews.html">Reviews</a>
+        <a class="active" href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="panel">
+        <h1>Frequently Asked Questions</h1>
+        <p class="lead">A good FAQ page removes hesitation, answers common concerns, and makes the company look prepared and transparent.</p>
+      </div>
+    </section>
+
+    <section class="stack">
+      <div class="faq">
+        <h3>Do you offer emergency HVAC service?</h3>
+        <p>Yes. This demo is structured around fast-response messaging so the business appears ready for urgent no-heat and no-cooling situations.</p>
+      </div>
+      <div class="faq">
+        <h3>Can you help with full system replacement?</h3>
+        <p>Yes. The service and gallery pages are set up to support higher-value installation jobs, including replacement-focused messaging.</p>
+      </div>
+      <div class="faq">
+        <h3>Do you offer maintenance plans?</h3>
+        <p>Yes. Maintenance positioning adds recurring-service value and helps a business look more established and proactive.</p>
+      </div>
+      <div class="faq">
+        <h3>Do you work on residential and light commercial systems?</h3>
+        <p>This demo includes both to make the company feel capable of handling more than basic homeowner service calls.</p>
+      </div>
+      <div class="faq">
+        <h3>Can this website be customized for another business?</h3>
+        <p>Yes. You can swap text, photos, service area wording, contact details, colors, and branding while keeping the same premium structure.</p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
