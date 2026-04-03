@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reviews | Prime Site Developer Demo</title>
+  <style>
+    :root{--line:rgba(255,255,255,.12);--text:#eef4ff;--muted:#aabbd2;--accent:#59c7ff;--accent2:#79e5c4;--shadow:0 18px 60px rgba(0,0,0,.35);--max:1180px}
+    *{box-sizing:border-box} body{margin:0;font-family:Inter,Arial,sans-serif;color:var(--text);background:linear-gradient(180deg,#06101c,#091423,#07111f)}
+    a{text-decoration:none;color:inherit} .container{width:min(calc(100% - 32px),var(--max));margin:auto}
+    .topbar{position:sticky;top:0;background:rgba(6,14,25,.72);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+    .nav{min-height:78px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:14px;font-weight:800}
+    .brand-mark{width:46px;height:46px;border-radius:16px;display:grid;place-items:center;background:linear-gradient(135deg,var(--accent),#4a86ff 55%,var(--accent2));color:#fff}
+    .nav-links{display:flex;gap:16px;flex-wrap:wrap}.nav-links a{color:var(--muted);font-weight:700;font-size:14px}.nav-links a.active,.nav-links a:hover{color:#fff}
+    .hero{padding:56px 0 22px}.panel,.card{border:1px solid var(--line);border-radius:24px;background:linear-gradient(180deg,rgba(255,255,255,.05),rgba(255,255,255,.02));box-shadow:var(--shadow)}
+    .panel{padding:28px} h1{font-size:clamp(36px,6vw,60px);margin:0 0 10px;letter-spacing:-1.5px}.lead{color:var(--muted);line-height:1.8;font-size:18px}
+    .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;padding-bottom:55px}.card{padding:26px}.stars{font-size:20px;margin-bottom:12px}
+    .card p{margin:0 0 16px;color:var(--muted);line-height:1.85}.name{font-weight:800}.meta{color:var(--muted);font-size:14px}
+    @media(max-width:900px){.grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="container nav">
+      <a class="brand" href="index.html"><div class="brand-mark">P</div><div>Prime Site Developer Demo</div></a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="gallery.html">Gallery</a>
+        <a class="active" href="reviews.html">Reviews</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="panel">
+        <h1>Customer Reviews</h1>
+        <p class="lead">This page is built to make social proof a major selling point. A premium review page helps homeowners trust the business before they ever make contact.</p>
+      </div>
+    </section>
+
+    <section class="grid">
+      <div class="card">
+        <div class="stars">★★★★★</div>
+        <p>“Outstanding service from start to finish. They explained everything clearly, arrived when they said they would, and got our system running again quickly.”</p>
+        <div class="name">Sarah M.</div>
+        <div class="meta">Homeowner</div>
+      </div>
+      <div class="card">
+        <div class="stars">★★★★★</div>
+        <p>“Very professional team. The technician was respectful, efficient, and took time to answer our questions. The whole experience felt smooth and trustworthy.”</p>
+        <div class="name">David R.</div>
+        <div class="meta">Residential client</div>
+      </div>
+      <div class="card">
+        <div class="stars">★★★★★</div>
+        <p>“We called during a stressful situation and they responded fast. The repair was handled the same day and the communication was excellent.”</p>
+        <div class="name">Melissa T.</div>
+        <div class="meta">Emergency service customer</div>
+      </div>
+      <div class="card">
+        <div class="stars">★★★★★</div>
+        <p>“They made our replacement project feel easy. The recommendation made sense, the installation looked clean, and the whole job felt high quality.”</p>
+        <div class="name">Anthony P.</div>
+        <div class="meta">System replacement customer</div>
+      </div>
+      <div class="card">
+        <div class="stars">★★★★★</div>
+        <p>“Friendly, responsive, and easy to work with. It is hard to find service companies that feel this organized and professional.”</p>
+        <div class="name">Karen L.</div>
+        <div class="meta">Local homeowner</div>
+      </div>
+      <div class="card">
+        <div class="stars">★★★★★</div>
+        <p>“I would absolutely recommend them. You can tell they care about doing the work right and treating customers well.”</p>
+        <div class="name">James W.</div>
+        <div class="meta">Repeat customer</div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
