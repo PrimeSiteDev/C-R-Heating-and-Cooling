@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services | Prime Site Developer Demo</title>
+  <style>
+    :root{--bg:#07111f;--panel:#11233b;--line:rgba(255,255,255,.12);--text:#eef4ff;--muted:#aabbd2;--accent:#59c7ff;--accent2:#79e5c4;--shadow:0 18px 60px rgba(0,0,0,.35);--max:1180px}
+    *{box-sizing:border-box} body{margin:0;font-family:Inter,Arial,sans-serif;color:var(--text);background:linear-gradient(180deg,#06101c,#091423,#07111f)}
+    a{text-decoration:none;color:inherit} .container{width:min(calc(100% - 32px),var(--max));margin:auto}
+    .topbar{position:sticky;top:0;background:rgba(6,14,25,.72);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+    .nav{min-height:78px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:14px;font-weight:800}
+    .brand-mark{width:46px;height:46px;border-radius:16px;display:grid;place-items:center;background:linear-gradient(135deg,var(--accent),#4a86ff 55%,var(--accent2));color:#fff}
+    .nav-links{display:flex;gap:16px;flex-wrap:wrap}.nav-links a{color:var(--muted);font-weight:700;font-size:14px}.nav-links a.active,.nav-links a:hover{color:#fff}
+    .hero{padding:56px 0 20px}.hero-card,.card{border:1px solid var(--line);border-radius:24px;background:linear-gradient(180deg,rgba(255,255,255,.05),rgba(255,255,255,.02));box-shadow:var(--shadow)}
+    .hero-card{padding:28px} h1{font-size:clamp(36px,6vw,60px);margin:0 0 10px;letter-spacing:-1.5px}.lead{color:var(--muted);line-height:1.8;font-size:18px}
+    .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;padding:24px 0 55px}.card{padding:26px}.icon{width:56px;height:56px;border-radius:18px;display:grid;place-items:center;background:linear-gradient(135deg,rgba(89,199,255,.18),rgba(121,229,196,.14));border:1px solid rgba(255,255,255,.1);font-size:24px;margin-bottom:14px}
+    .card h3{margin:0 0 10px;font-size:28px}.card p{margin:0 0 14px;color:var(--muted);line-height:1.8}.card ul{margin:0;padding-left:18px;color:#dce8fa;line-height:1.8}
+    @media(max-width:920px){.grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="container nav">
+      <a class="brand" href="index.html"><div class="brand-mark">P</div><div>Prime Site Developer Demo</div></a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a class="active" href="services.html">Services</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-card">
+        <h1>Full-Service HVAC Solutions</h1>
+        <p class="lead">A premium service page should make the company look capable of handling everything from urgent repairs to long-term maintenance and complete system replacements.</p>
+      </div>
+    </section>
+
+    <section class="grid">
+      <div class="card">
+        <div class="icon">❄️</div>
+        <h3>AC Repair</h3>
+        <p>Fast cooling system diagnostics and dependable repair service designed to restore comfort without unnecessary delays.</p>
+        <ul>
+          <li>Warm air troubleshooting</li>
+          <li>Thermostat and airflow issues</li>
+          <li>Strange noises and system cycling</li>
+          <li>Emergency cooling response</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="icon">🔥</div>
+        <h3>Heating Repair</h3>
+        <p>Professional heating repairs for systems that stop performing when dependable warmth matters most.</p>
+        <ul>
+          <li>Furnace service and repair</li>
+          <li>Heat pump troubleshooting</li>
+          <li>No-heat emergency calls</li>
+          <li>Performance and safety checks</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="icon">🛠</div>
+        <h3>System Installation</h3>
+        <p>High-value installation messaging that helps position the business for bigger jobs and better perceived authority.</p>
+        <ul>
+          <li>Full system replacement</li>
+          <li>Energy-efficient upgrade options</li>
+          <li>New home system setup</li>
+          <li>Financing-ready sales language</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="icon">📅</div>
+        <h3>Preventive Maintenance</h3>
+        <p>Maintenance plan positioning that helps the company look proactive, organized, and built for recurring customer relationships.</p>
+        <ul>
+          <li>Seasonal system tune-ups</li>
+          <li>Filter and airflow checks</li>
+          <li>Efficiency inspection</li>
+          <li>Priority member service messaging</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="icon">🌬</div>
+        <h3>Indoor Air Quality</h3>
+        <p>Clean air solutions add more depth to the service mix and make the company feel more modern and full-service.</p>
+        <ul>
+          <li>Air purification solutions</li>
+          <li>Humidity control options</li>
+          <li>Ventilation improvements</li>
+          <li>Allergy-focused comfort messaging</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="icon">🏢</div>
+        <h3>Light Commercial HVAC</h3>
+        <p>This section helps the business look equipped for more than residential work and expands perceived service capability.</p>
+        <ul>
+          <li>Small business system service</li>
+          <li>Commercial repair calls</li>
+          <li>Maintenance scheduling</li>
+          <li>Reliable vendor positioning</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
