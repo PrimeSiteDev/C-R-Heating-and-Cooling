@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | C & R Heating & Cooling</title>
+  <meta name="description" content="Learn more about C & R Heating & Cooling and our commitment to dependable heating and cooling service." />
+  <style>
+    :root{
+      --bg:#07111f;
+      --panel:#11233b;
+      --panel2:#0d1d33;
+      --line:rgba(255,255,255,.12);
+      --text:#eef4ff;
+      --muted:#aabbd2;
+      --accent:#59c7ff;
+      --accent2:#79e5c4;
+      --shadow:0 18px 60px rgba(0,0,0,.35);
+      --max:1180px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:Inter,Arial,sans-serif;
+      color:var(--text);
+      background:linear-gradient(180deg,#06101c,#091423,#07111f);
+    }
+    a{text-decoration:none;color:inherit}
+    .container{width:min(calc(100% - 32px),var(--max));margin:auto}
+    .topbar{
+      position:sticky;
+      top:0;
+      z-index:100;
+      background:rgba(6,14,25,.72);
+      backdrop-filter:blur(16px);
+      border-bottom:1px solid var(--line);
+    }
+    .nav{
+      min-height:78px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:20px;
+    }
+    .brand{display:flex;align-items:center;gap:14px;font-weight:800}
+    .brand-mark{
+      width:46px;height:46px;border-radius:16px;display:grid;place-items:center;
+      background:linear-gradient(135deg,var(--accent),#4a86ff 55%,var(--accent2));color:#fff
+    }
+    .brand small{
+      display:block;
+      color:var(--muted);
+      font-size:12px;
+      font-weight:700;
+      margin-top:2px;
+    }
+    .nav-links{display:flex;gap:16px;flex-wrap:wrap}
+    .nav-links a{color:var(--muted);font-weight:700;font-size:14px}
+    .nav-links a.active,.nav-links a:hover{color:#fff}
+    .hero{padding:58px 0 24px}
+    .card{
+      border:1px solid var(--line);
+      background:linear-gradient(180deg,rgba(255,255,255,.05),rgba(255,255,255,.02));
+      border-radius:24px;
+      padding:28px;
+      box-shadow:var(--shadow);
+    }
+    h1{
+      font-size:clamp(36px,6vw,62px);
+      margin:0 0 14px;
+      letter-spacing:-1.5px;
+    }
+    .lead{
+      color:var(--muted);
+      line-height:1.8;
+      font-size:18px;
+    }
+    .split{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:18px;
+      padding:20px 0 50px;
+    }
+    .photo{
+      min-height:480px;
+      border-radius:24px;
+      background:
+        linear-gradient(180deg,rgba(7,17,31,.1),rgba(7,17,31,.58)),
+        url('https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
+      box-shadow:var(--shadow);
+      border:1px solid var(--line);
+    }
+    .list{display:grid;gap:14px;margin-top:16px}
+    .item{
+      padding:16px 18px;
+      border:1px solid rgba(255,255,255,.08);
+      border-radius:18px;
+      background:rgba(255,255,255,.03);
+    }
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:18px;
+      padding-bottom:50px;
+    }
+    .mini{padding:24px}
+    .mini h3{margin:0 0 10px}
+    .mini p{margin:0;color:var(--muted);line-height:1.72}
+    @media(max-width:980px){
+      .split,.grid{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="container nav">
+      <a class="brand" href="index.html">
+        <div class="brand-mark">C</div>
+        <div>
+          <div>C & R Heating & Cooling</div>
+          <small>Heating & Air Conditioning Services</small>
+        </div>
+      </a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a class="active" href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="card">
+        <h1>About C & R Heating & Cooling</h1>
+        <p class="lead">
+          C & R Heating & Cooling is dedicated to helping homeowners and local businesses stay comfortable year-round with dependable heating and cooling solutions. Our goal is to provide professional service, honest recommendations, and reliable workmanship customers can feel confident in.
+        </p>
+      </div>
+    </section>
+
+    <section class="split">
+      <div class="photo"></div>
+
+      <div class="card">
+        <h2 style="margin-top:0;font-size:38px;">Focused on comfort, reliability, and service</h2>
+        <p class="lead" style="font-size:17px;">
+          We believe customers deserve fast response times, quality service, and clear communication from start to finish. Whether the job is a repair, maintenance visit, or full system replacement, C & R Heating & Cooling is committed to making the experience smooth, professional, and dependable.
+        </p>
+
+        <div class="list">
+          <div class="item">
+            <strong>Dependable local service</strong><br>
+            <span style="color:var(--muted);">Built around helping customers feel comfortable calling a trusted local HVAC company.</span>
+          </div>
+          <div class="item">
+            <strong>Professional workmanship</strong><br>
+            <span style="color:var(--muted);">Every service visit should reflect quality, care, and attention to detail.</span>
+          </div>
+          <div class="item">
+            <strong>Customer-first communication</strong><br>
+            <span style="color:var(--muted);">Clear explanations and honest service help build long-term trust.</span>
+          </div>
+          <div class="item">
+            <strong>Year-round comfort support</strong><br>
+            <span style="color:var(--muted);">From hot summer days to cold winter nights, comfort matters every season.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="grid">
+      <div class="card mini">
+        <h3>Our Mission</h3>
+        <p>Provide dependable heating and cooling service with fast response, honest recommendations, and a commitment to customer comfort.</p>
+      </div>
+      <div class="card mini">
+        <h3>Our Approach</h3>
+        <p>Combine technical HVAC service with professional communication so every customer interaction feels clear, organized, and trustworthy.</p>
+      </div>
+      <div class="card mini">
+        <h3>Our Commitment</h3>
+        <p>Deliver reliable service that helps homeowners and businesses feel confident they chose the right company for the job.</p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

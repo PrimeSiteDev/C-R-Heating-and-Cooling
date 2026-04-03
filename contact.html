@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | C & R Heating & Cooling</title>
+  <meta name="description" content="Contact C & R Heating & Cooling for HVAC repair, installation, and maintenance service." />
+
+  <style>
+    :root{
+      --line:rgba(255,255,255,.12);
+      --text:#eef4ff;
+      --muted:#aabbd2;
+      --accent:#59c7ff;
+      --accent2:#79e5c4;
+      --shadow:0 18px 60px rgba(0,0,0,.35);
+      --max:1180px;
+    }
+
+    *{box-sizing:border-box}
+
+    body{
+      margin:0;
+      font-family:Inter,Arial,sans-serif;
+      color:var(--text);
+      background:linear-gradient(180deg,#06101c,#091423,#07111f);
+    }
+
+    a{text-decoration:none;color:inherit}
+
+    .container{
+      width:min(calc(100% - 32px),var(--max));
+      margin:auto;
+    }
+
+    .topbar{
+      position:sticky;
+      top:0;
+      z-index:100;
+      background:rgba(6,14,25,.72);
+      backdrop-filter:blur(16px);
+      border-bottom:1px solid var(--line);
+    }
+
+    .nav{
+      min-height:78px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:20px;
+    }
+
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:14px;
+      font-weight:800;
+    }
+
+    .brand-mark{
+      width:46px;
+      height:46px;
+      border-radius:16px;
+      display:grid;
+      place-items:center;
+      background:linear-gradient(135deg,var(--accent),#4a86ff 55%,var(--accent2));
+      color:#fff;
+    }
+
+    .brand small{
+      display:block;
+      color:var(--muted);
+      font-size:12px;
+      font-weight:700;
+      margin-top:2px;
+    }
+
+    .nav-links{
+      display:flex;
+      gap:16px;
+      flex-wrap:wrap;
+    }
+
+    .nav-links a{
+      color:var(--muted);
+      font-weight:700;
+      font-size:14px;
+    }
+
+    .nav-links a.active,
+    .nav-links a:hover{
+      color:#fff;
+    }
+
+    .hero{
+      padding:56px 0 22px;
+    }
+
+    .panel,
+    .card{
+      border:1px solid var(--line);
+      border-radius:24px;
+      background:linear-gradient(180deg,rgba(255,255,255,.05),rgba(255,255,255,.02));
+      box-shadow:var(--shadow);
+    }
+
+    .panel{
+      padding:28px;
+    }
+
+    h1{
+      font-size:clamp(36px,6vw,60px);
+      margin:0 0 10px;
+      letter-spacing:-1.5px;
+    }
+
+    .lead{
+      color:var(--muted);
+      line-height:1.8;
+      font-size:18px;
+    }
+
+    .split{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:18px;
+      padding-bottom:55px;
+    }
+
+    .card{
+      padding:26px;
+    }
+
+    .info{
+      display:grid;
+      gap:14px;
+    }
+
+    .item{
+      padding:16px 18px;
+      border:1px solid rgba(255,255,255,.08);
+      border-radius:18px;
+      background:rgba(255,255,255,.03);
+    }
+
+    .call-box{
+      margin-top:20px;
+      padding:20px;
+      border-radius:18px;
+      background:linear-gradient(135deg,var(--accent),#4788ff 58%,var(--accent2));
+      text-align:center;
+      font-weight:800;
+      font-size:18px;
+      box-shadow:0 16px 40px rgba(89,199,255,.22);
+    }
+
+    @media(max-width:900px){
+      .split{
+        grid-template-columns:1fr;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <header class="topbar">
+    <div class="container nav">
+      <a class="brand" href="index.html">
+        <div class="brand-mark">C</div>
+        <div>
+          <div>C & R Heating & Cooling</div>
+          <small>Heating & Air Conditioning Services</small>
+        </div>
+      </a>
+
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="faq.html">FAQ</a>
+        <a class="active" href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <section class="hero">
+      <div class="panel">
+        <h1>Contact C & R Heating & Cooling</h1>
+        <p class="lead">
+          Need heating or cooling service? Call today for fast, reliable HVAC repair, installation, and maintenance support.
+        </p>
+      </div>
+    </section>
+
+    <section class="split">
+
+      <!-- LEFT SIDE -->
+      <div class="card">
+        <h2 style="margin-top:0;font-size:34px;">Business Information</h2>
+
+        <div class="info">
+
+          <div class="item">
+            <strong>Phone</strong><br>
+            <span style="color:var(--muted);">(757) 727-9195</span>
+          </div>
+
+          <div class="item">
+            <strong>Address</strong><br>
+            <span style="color:var(--muted);">602 Washington St, Hampton, VA 23669</span>
+          </div>
+
+          <div class="item">
+            <strong>Hours</strong><br>
+            <span style="color:var(--muted);">Monday–Friday • 8:00 AM – 5:00 PM</span>
+          </div>
+
+          <div class="item">
+            <strong>Emergency Service</strong><br>
+            <span style="color:var(--muted);">Available for urgent heating and cooling needs</span>
+          </div>
+
+        </div>
+
+        <a href="tel:17577279195" class="call-box">
+          📞 Call Now: (757) 727-9195
+        </a>
+
+      </div>
+
+      <!-- RIGHT SIDE -->
+      <div class="card">
+        <h2 style="margin-top:0;font-size:34px;">Why Call Us?</h2>
+
+        <div class="info">
+
+          <div class="item">
+            <strong>Fast Response</strong><br>
+            <span style="color:var(--muted);">Quick service for heating and cooling issues when you need help the most.</span>
+          </div>
+
+          <div class="item">
+            <strong>Professional Service</strong><br>
+            <span style="color:var(--muted);">Reliable HVAC work designed to keep your home comfortable year-round.</span>
+          </div>
+
+          <div class="item">
+            <strong>Experienced Team</strong><br>
+            <span style="color:var(--muted);">Skilled technicians ready to handle repairs, installations, and maintenance.</span>
+          </div>
+
+          <div class="item">
+            <strong>Local & Trusted</strong><br>
+            <span style="color:var(--muted);">Serving Hampton and surrounding areas with dependable service.</span>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+</body>
+</html>
